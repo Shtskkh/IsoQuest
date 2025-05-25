@@ -2,14 +2,32 @@
     "name": "InputSystem_Actions",
     "maps": [
         {
-            "name": "Gameplay/MainLevel",
-            "id": "8c66e023-4fe6-4f65-ac53-43e9ea6cb0d6",
+            "name": "Gameplay",
+            "id": "f5874de8-a0ad-418a-b6ef-779124bc70f4",
             "actions": [
                 {
-                    "name": "Click",
+                    "name": "ClickOnScreen",
                     "type": "Value",
-                    "id": "e2fc8196-ab47-4efe-a847-cf9af74ae09d",
+                    "id": "95559280-9f3a-46ce-be19-901a839101da",
                     "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "2bc2be48-af2e-45d3-b2dd-480d6a0b90ba",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "f75dd30c-716b-4f27-a94b-8c85ceaee171",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": true
@@ -17,24 +35,112 @@
             ],
             "bindings": [
                 {
-                    "name": "",
-                    "id": "820ec8f8-4a26-4488-add8-d0a5d0f17181",
-                    "path": "<Mouse>/leftButton",
+                    "name": "WASD",
+                    "id": "30dcfc13-f9df-4216-83b0-49584925dacd",
+                    "path": "2DVector",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "up",
+                    "id": "bcaec238-7863-49da-984f-cc0a4b37a501",
+                    "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "Click",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "down",
+                    "id": "b67310d0-a127-4790-b9dd-75f7618edb54",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "left",
+                    "id": "c43eb7e7-9340-4fb5-a9b3-b93b8695a2f7",
+                    "path": "<Keyboard>/a",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "8ba2b11f-31af-4d76-b484-f054d365e8f2",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "b17823c2-847b-4475-a263-65d8bad8b177",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Gamepad;Touch",
+                    "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "6fd2a216-b1ac-4524-a99e-a5cf26e4f8ed",
+                    "id": "d72cd3e7-6abd-49d2-b368-dbd8b97a54ac",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Keyboard&Mouse",
+                    "action": "ClickOnScreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b3b3ad1c-0203-4be2-b5bb-714f34b967a2",
                     "path": "<Touchscreen>/primaryTouch/tap",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Touch",
-                    "action": "Click",
+                    "action": "ClickOnScreen",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9b17e89d-e9b4-41ec-95ae-efe36825b3cf",
+                    "path": "<Touchscreen>/primaryTouch/tap",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": ";Touch",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2c20f0bf-de8e-41c8-9448-61a7773418e4",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
