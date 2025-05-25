@@ -4755,6 +4755,7 @@ MonoBehaviour:
   playerModel: {fileID: 522974388}
   rb: {fileID: 1172612029}
   moveSpeed: 5
+  rotateSpeed: 360
 --- !u!54 &1172612029 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1750536641605787477, guid: 856350a7c2d2d8647b95d5f6bc3ba3e8, type: 3}

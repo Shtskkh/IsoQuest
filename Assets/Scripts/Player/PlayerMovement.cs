@@ -38,8 +38,12 @@ namespace Player
         private void Look()
         {
             if (_moveInput == Vector3.zero) return;
-        
-            var relative = transform.position + _moveInput - transform.position;
+
+            var matrix = Matrix4x4.Rotate(Quaternion.Euler(0, 45, 0));
+            
+            var skwedInput = matrix.MultiplyPoint3x4(_moveInput);
+            
+            var relative = transform.position + skwedInput - transform.position;
             var rotation = Quaternion.LookRotation(relative, Vector3.up);
             transform.rotation = rotation;
         }
