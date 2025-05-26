@@ -1,20 +1,32 @@
+using Effects;
 using UnityEngine;
-using Hexagons;
-using UnityEditor.Localization.Plugins.XLIFF.V12;
 
 namespace Hexagons
 {
     public class Hex : MonoBehaviour
     {
-        [SerializeField] private Vector3Int hexCoords;
-
-        private float _hexSize;
+        [SerializeField] public Vector3Int hexCoords;
+        [SerializeField] public GlowHighlight highlight;
 
         private void Awake()
         {
-            _hexSize = GetComponent<MeshRenderer>().bounds.size.z * 0.5f;
-            var coords = HexCoords.FromPosition(transform.position, _hexSize);
+            var coords = HexCoords.FromPosition(transform.position, HexMetrics.HexSize);
             hexCoords = new Vector3Int(coords.Q, coords.R, coords.S);
+        }
+
+        public void ToggleHighlight()
+        {
+            highlight.ToggleGlowing();
+        }
+
+        public void EnableHighlight()
+        {
+            highlight.EnableGlowing();
+        }
+
+        public void DisableHighlight()
+        {
+            highlight.DisableGlowing();
         }
     }
 }

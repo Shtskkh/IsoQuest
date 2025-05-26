@@ -12,7 +12,7 @@ namespace Player
 
         private void Awake()
         {
-            _click = InputSystem.actions.FindAction("Click");
+            _click = InputSystem.actions.FindAction("ClickOnScreen");
         }
 
         private void OnEnable()

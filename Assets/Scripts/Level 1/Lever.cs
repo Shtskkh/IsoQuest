@@ -1,6 +1,5 @@
 using Player;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace Level_1
 {

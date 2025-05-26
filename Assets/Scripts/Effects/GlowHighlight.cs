@@ -27,5 +27,15 @@ namespace Effects
         {
             isGlowing = !isGlowing;
         }
+
+        public void EnableGlowing()
+        {
+            isGlowing = true;
+        }
+
+        public void DisableGlowing()
+        {
+            isGlowing = false;
+        }
     }
 }

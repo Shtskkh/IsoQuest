@@ -121,6 +121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hexCoords: {x: 0, y: 0, z: 0}
+  highlight: {fileID: 3560744517285819978}
 --- !u!114 &3560744517285819978
 MonoBehaviour:
   m_ObjectHideFlags: 0
