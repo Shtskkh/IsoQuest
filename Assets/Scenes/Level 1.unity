@@ -566,6 +566,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lever (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1468350181518048514, guid: 49e872631933db846bff77525168a4cb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2246012093024380856, guid: 49e872631933db846bff77525168a4cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.673
@@ -2662,6 +2666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: lever (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1468350181518048514, guid: 49e872631933db846bff77525168a4cb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 2246012093024380856, guid: 49e872631933db846bff77525168a4cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.673
@@ -4734,6 +4742,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 148997916609460367, guid: 856350a7c2d2d8647b95d5f6bc3ba3e8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1172612027}
+    - targetCorrespondingSourceObject: {fileID: 148997916609460367, guid: 856350a7c2d2d8647b95d5f6bc3ba3e8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1172612030}
   m_SourcePrefab: {fileID: 100100000, guid: 856350a7c2d2d8647b95d5f6bc3ba3e8, type: 3}
 --- !u!1 &1172612025 stripped
 GameObject:
@@ -4755,12 +4766,23 @@ MonoBehaviour:
   playerModel: {fileID: 522974388}
   rb: {fileID: 1172612029}
   moveSpeed: 5
-  rotateSpeed: 360
 --- !u!54 &1172612029 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 1750536641605787477, guid: 856350a7c2d2d8647b95d5f6bc3ba3e8, type: 3}
   m_PrefabInstance: {fileID: 1172612024}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1172612030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172612025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0d4d27941e1eeb43b933ab0c9cfb92a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1172835300 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8e88913f41915b4439292ed0b07ec441, type: 3}
@@ -9164,6 +9186,10 @@ PrefabInstance:
     - target: {fileID: 1468350181518048514, guid: 49e872631933db846bff77525168a4cb, type: 3}
       propertyPath: m_Name
       value: lever
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468350181518048514, guid: 49e872631933db846bff77525168a4cb, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1502367760579429986, guid: 49e872631933db846bff77525168a4cb, type: 3}
       propertyPath: m_Radius
