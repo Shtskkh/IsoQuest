@@ -15,13 +15,24 @@ namespace Level_1
         [SerializeField] private GameObject platformA;
         [SerializeField] private GameObject platformB;
         [SerializeField] private GameObject platformC;
-
-
+        
         private void Awake()
         {
-            platformA.transform.position += GetPlatformPosition(PlatformPosition.Left);
-            platformB.transform.position += GetPlatformPosition(PlatformPosition.Right);
-            platformC.transform.position += GetPlatformPosition(PlatformPosition.Left);
+            MovePlatform(platformA, PlatformPosition.Right);
+            MovePlatform(platformB, PlatformPosition.Middle);
+            MovePlatform(platformC, PlatformPosition.Left);
+        }
+
+        public static void MoveToNextPosition(GameObject platform)
+        {
+            var position = platform.transform.localPosition.z;
+            
+            if (Mathf.Approximately(position, GetPlatformPosition(PlatformPosition.Left).z))
+                MovePlatform(platform, PlatformPosition.Middle);
+            else if (Mathf.Approximately(position, GetPlatformPosition(PlatformPosition.Middle).z))
+                MovePlatform(platform, PlatformPosition.Right);
+            else if (Mathf.Approximately(position, GetPlatformPosition(PlatformPosition.Right).z))
+                MovePlatform(platform, PlatformPosition.Left);
         }
 
         public static void MovePlatform(GameObject platform, PlatformPosition position)

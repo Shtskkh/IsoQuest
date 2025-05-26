@@ -42,6 +42,12 @@ namespace Level_1
             leverHandle.transform.rotation = toggled
                 ? Quaternion.Euler(0, 0, deflectionAngle)
                 : Quaternion.Euler(0, 0, -deflectionAngle);
+
+            if (platform1)
+                PlatformManager.MoveToNextPosition(platform1);
+            
+            if (platform2)
+                PlatformManager.MoveToNextPosition(platform2);
         }
     }
 }
