@@ -7,8 +7,10 @@
     <list default="true" id="265fe74a-df2e-434e-b9cf-204e6e169606" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level 1/Lever.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level 1/Lever.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level 1/PlatformManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level 1/PlatformManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -132,7 +134,7 @@
       <workItem from="1748164174738" duration="28000" />
       <workItem from="1748164683994" duration="3162000" />
       <workItem from="1748170100661" duration="487000" />
-      <workItem from="1748229988261" duration="4969000" />
+      <workItem from="1748229988261" duration="5510000" />
     </task>
     <servers />
   </component>

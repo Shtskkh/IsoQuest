@@ -16,7 +16,7 @@ namespace Player
         
         private void Update()
         {
-            if (_interactInput.WasPerformedThisDynamicUpdate())
+            if (_interactInput.WasPerformedThisFrame())
                 _interactionEvent.Invoke();
         }
 
