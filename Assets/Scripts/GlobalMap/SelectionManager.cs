@@ -11,7 +11,7 @@ namespace GlobalMap
         [SerializeField] private HexGrid hexGrid;
         [SerializeField] private Hex currentHex;
         [SerializeField] private Transform player;
-        [SerializeField] private int paymentAbility;
+        [SerializeField] public int paymentAbility;
 
         private List<Vector3Int> _neighbours;
         private GameObject _targetHex;
@@ -28,12 +28,18 @@ namespace GlobalMap
             {
                 yield return null;
             }
-            
-            _neighbours = hexGrid.GetNeighbors(currentHex.hexCoords);
-            
-            foreach (var neighbour in _neighbours)
+
+            _neighbours = new List<Vector3Int>();
+            var neighbours = hexGrid.GetNeighbors(currentHex.hexCoords);
+
+            foreach (var neighbour in neighbours)
             {
-                hexGrid.GetTile(neighbour).EnableHighlight();
+                var hex = hexGrid.GetTile(neighbour);
+                if (hex.cost <= paymentAbility)
+                {
+                    hex.EnableHighlight();
+                    _neighbours.Add(neighbour);
+                }
             }
         }
 
@@ -51,15 +57,23 @@ namespace GlobalMap
                 hexGrid.GetTile(neighbour).DisableHighlight();
             }
 
+            _neighbours.Clear();
+
             RotatePlayer(targetHex.hexCoords);
             MovePlayer(targetHex.transform.position);
             currentHex = targetHex;
 
-            _neighbours = hexGrid.GetNeighbors(currentHex.hexCoords);
+            _neighbours = new List<Vector3Int>();
+            var neighbours = hexGrid.GetNeighbors(currentHex.hexCoords);
 
-            foreach (var neighbour in _neighbours)
+            foreach (var neighbour in neighbours)
             {
-                hexGrid.GetTile(neighbour).EnableHighlight();
+                var hex = hexGrid.GetTile(neighbour);
+                if (hex.cost <= paymentAbility)
+                {
+                    hex.EnableHighlight();
+                    _neighbours.Add(neighbour);
+                }
             }
         }
 
