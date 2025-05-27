@@ -1,9 +1,11 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Hexagons
 {
-    public class HexCoords
+    public class HexCoords : IEquatable<HexCoords>
     {
         public readonly int Q, R, S;
 
@@ -26,19 +28,15 @@ namespace Hexagons
             if (Q + R + S != 0)
                 throw new Exception("Q + R + S != 0");
         }
-
-        public static readonly HexCoords[] Directions = {
-            new (1, 0, -1), // Right
-            new (1, -1, 0), // Top-Right
-            new (0, -1, 1), // Top-Left
-            new (-1, 0, 1), // Left
-            new (-1, 1, 0), // Down-Left
-            new (0, 1, -1) // Down-Right
-        };
-
-        public static readonly float[] RotationAngles =
+        
+        public static readonly Dictionary<HexCoords, float> Directions = new()
         {
-            0, 60, 120, 180, 240, 300
+            { new HexCoords(1, 0, -1), 90f }, // Right
+            { new HexCoords(1, -1, 0), 45f }, // Top-Right
+            { new HexCoords(0, -1, 1), -45f }, // Top-Left
+            { new HexCoords(-1, 0, 1), -90f }, // Left
+            { new HexCoords(-1, 1, 0), -150f }, // Down-Left
+            { new HexCoords(0, 1, -1), -210f } // Down-Right
         };
 
         public static HexCoords operator +(HexCoords a, HexCoords b)
@@ -56,6 +54,21 @@ namespace Hexagons
             return new HexCoords(a.Q * k, a.R * k, a.S * k);
         }
 
+        public bool Equals(HexCoords other)
+        {
+            return other != null && Q == other.Q && R == other.R && S == other.S;
+        }
+
+        public override bool Equals(object obj)
+        {
+            return obj is HexCoords other && Equals(other);
+        }
+        
+        public override int GetHashCode()
+        {
+            return HashCode.Combine(Q, R, S);
+        }
+
         public static int Length(HexCoords hex)
         {
             return (Mathf.Abs(hex.Q) + Mathf.Abs(hex.R) + Mathf.Abs(hex.S)) / 2;
@@ -66,14 +79,31 @@ namespace Hexagons
             return Length(a-b);
         }
 
+        /*
         public static HexCoords Direction(int direction)
         {
-            return Directions[direction % 6];
+            return Directions.ElementAt(direction);
+        }
+
+        public static float RotationAngle(Vector3Int direction)
+        {
+            return RotationAngles[direction % 6];
         }
 
         public static HexCoords Neighbor(HexCoords hex, int direction)
         {
             return hex + Direction(direction);
+        }
+        */
+
+        public static Vector3Int ToVector3Int(HexCoords hexCoords)
+        {
+            return new Vector3Int(hexCoords.Q, hexCoords.R, hexCoords.S);
+        }
+
+        public static HexCoords FromVector3Int(Vector3Int hexCoords)
+        {
+            return new HexCoords(hexCoords[0], hexCoords[1], hexCoords[2]);
         }
 
         public static HexCoords FromPosition(Vector3 position, float hexSize)

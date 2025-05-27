@@ -7,6 +7,7 @@ namespace Hexagons
     {
         [SerializeField] public Vector3Int hexCoords;
         [SerializeField] public GlowHighlight highlight;
+        [SerializeField] public int cost;
 
         private void Awake()
         {

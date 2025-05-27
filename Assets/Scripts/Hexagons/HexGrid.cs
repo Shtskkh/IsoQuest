@@ -34,7 +34,7 @@ namespace Hexagons
 
             foreach (var d in HexCoords.Directions)
             {
-                var direction = new Vector3Int(d.Q, d.R, d.S);
+                var direction = HexCoords.ToVector3Int(d.Key);
                 if (_hexTiles.ContainsKey(coords + direction))
                     _hexNeighbors[coords].Add(coords + direction);
             }
