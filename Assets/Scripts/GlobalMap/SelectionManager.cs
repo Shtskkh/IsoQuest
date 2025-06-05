@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Hexagons;
+using Managers;
 using UnityEngine;
 
 namespace GlobalMap
@@ -11,7 +12,6 @@ namespace GlobalMap
         [SerializeField] private HexGrid hexGrid;
         [SerializeField] private Hex currentHex;
         [SerializeField] private Transform player;
-        [SerializeField] public int paymentAbility;
 
         private List<Vector3Int> _neighbours;
         private GameObject _targetHex;
@@ -35,7 +35,7 @@ namespace GlobalMap
             foreach (var neighbour in neighbours)
             {
                 var hex = hexGrid.GetTile(neighbour);
-                if (hex.cost <= paymentAbility)
+                if (hex.cost <= GameManager.Singleton.paymentAbility)
                 {
                     hex.EnableHighlight();
                     _neighbours.Add(neighbour);
@@ -69,7 +69,7 @@ namespace GlobalMap
             foreach (var neighbour in neighbours)
             {
                 var hex = hexGrid.GetTile(neighbour);
-                if (hex.cost <= paymentAbility)
+                if (hex.cost <= GameManager.Singleton.paymentAbility)
                 {
                     hex.EnableHighlight();
                     _neighbours.Add(neighbour);
