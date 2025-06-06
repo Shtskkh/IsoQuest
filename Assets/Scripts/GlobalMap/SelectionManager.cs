@@ -81,7 +81,13 @@ namespace GlobalMap
         private void MovePlayer(Vector3 position)
         {
             player.position = new Vector3(position.x, HexMetrics.HexHeight, position.z);
-            animator.CrossFadeInFixedTime("Jump_Land", 0.2f);
+            animator.CrossFadeInFixedTime("Jump_Land", 0.05f);
+            PlayIdleAfterJump();
+        }
+        
+        private void PlayIdleAfterJump()
+        {
+            animator.CrossFadeInFixedTime("Idle", 0.05f);
         }
 
         private void RotatePlayer(Vector3Int targetHex)

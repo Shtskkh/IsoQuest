@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="265fe74a-df2e-434e-b9cf-204e6e169606" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerAnimation.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GlobalMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GlobalMap.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalMap/SelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalMap/SelectionManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,7 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Effects/GlowHighlight.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GlobalMap/SelectionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hexagons/HexGrid.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Level 1/PlatformManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.inputsystem@7fe8299111a7/InputSystem/Controls/InputControl.cs" root0="SKIP_HIGHLIGHTING" />
@@ -145,6 +144,8 @@
       <workItem from="1749183431476" duration="579000" />
       <workItem from="1749184111769" duration="149000" />
       <workItem from="1749221099346" duration="289000" />
+      <workItem from="1749222627650" duration="53000" />
+      <workItem from="1749222706443" duration="1601000" />
     </task>
     <servers />
   </component>
