@@ -7,6 +7,7 @@ namespace Player
 {
     public class PlayerInteraction : MonoBehaviour
     { 
+        [SerializeField] private Animator animator;
         [SerializeField] private GameObject interactButton;
         private readonly UnityEvent _interactionEvent = new();
         private InputAction _interactInput;
@@ -24,7 +25,10 @@ namespace Player
         private void Update()
         {
             if (_interactInput.WasPerformedThisFrame())
+            {
+                animator.CrossFadeInFixedTime("Interact", 0.2f);
                 _interactionEvent.Invoke();
+            }
         }
 
         public void SetInteraction(UnityAction interactionEvent)
