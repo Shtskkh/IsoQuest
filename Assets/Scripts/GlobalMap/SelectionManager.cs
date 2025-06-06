@@ -12,6 +12,7 @@ namespace GlobalMap
         [SerializeField] private HexGrid hexGrid;
         [SerializeField] private Hex currentHex;
         [SerializeField] private Transform player;
+        [SerializeField] private Animator animator;
 
         private List<Vector3Int> _neighbours;
         private GameObject _targetHex;
@@ -80,6 +81,7 @@ namespace GlobalMap
         private void MovePlayer(Vector3 position)
         {
             player.position = new Vector3(position.x, HexMetrics.HexHeight, position.z);
+            animator.CrossFadeInFixedTime("Jump_Land", 0.2f);
         }
 
         private void RotatePlayer(Vector3Int targetHex)

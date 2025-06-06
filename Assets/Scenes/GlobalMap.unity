@@ -207,6 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0d4d27941e1eeb43b933ab0c9cfb92a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 1136014711}
   interactButton: {fileID: 794493959}
 --- !u!1001 &20410782
 PrefabInstance:
@@ -2934,6 +2935,7 @@ MonoBehaviour:
   hexGrid: {fileID: 1486497800}
   currentHex: {fileID: 563938260}
   player: {fileID: 12914720}
+  animator: {fileID: 1136014711}
 --- !u!4 &647241380
 Transform:
   m_ObjectHideFlags: 0

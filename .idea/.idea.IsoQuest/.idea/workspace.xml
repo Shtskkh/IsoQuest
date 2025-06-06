@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="265fe74a-df2e-434e-b9cf-204e6e169606" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Players/Characters/fbx/Mage.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Players/Characters/fbx/Mage.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animations/PlayerAnimation.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/PlayerAnimation.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GlobalMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GlobalMap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GlobalMap/SelectionManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GlobalMap/SelectionManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,6 +144,7 @@
       <workItem from="1749097705873" duration="16060000" />
       <workItem from="1749183431476" duration="579000" />
       <workItem from="1749184111769" duration="149000" />
+      <workItem from="1749221099346" duration="289000" />
     </task>
     <servers />
   </component>
