@@ -1,11 +1,13 @@
-using System;
 using UnityEngine;
 
-public class FollowCamera : MonoBehaviour
+namespace UI
 {
-    private void Update()
+    public class FollowCamera : MonoBehaviour
     {
-        var rotation = Camera.main.transform.rotation;
-        transform.LookAt(transform.position + rotation * Vector3.forward, rotation * Vector3.up);
+        private void Update()
+        {
+            var rotation = Camera.main.transform.rotation;
+            transform.LookAt(transform.position + rotation * Vector3.forward, rotation * Vector3.up);
+        }
     }
 }
