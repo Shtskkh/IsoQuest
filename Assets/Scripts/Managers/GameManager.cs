@@ -1,5 +1,4 @@
-﻿using GlobalMap;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Managers

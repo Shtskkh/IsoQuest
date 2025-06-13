@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 
 namespace Hexagons
@@ -78,23 +77,6 @@ namespace Hexagons
         {
             return Length(a-b);
         }
-
-        /*
-        public static HexCoords Direction(int direction)
-        {
-            return Directions.ElementAt(direction);
-        }
-
-        public static float RotationAngle(Vector3Int direction)
-        {
-            return RotationAngles[direction % 6];
-        }
-
-        public static HexCoords Neighbor(HexCoords hex, int direction)
-        {
-            return hex + Direction(direction);
-        }
-        */
 
         public static Vector3Int ToVector3Int(HexCoords hexCoords)
         {

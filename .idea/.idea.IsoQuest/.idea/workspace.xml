@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="265fe74a-df2e-434e-b9cf-204e6e169606" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IsoQuest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Core/Finish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Core/Finish.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Hexagons/HexCoords.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Hexagons/HexCoords.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,6 +154,7 @@
       <workItem from="1749222706443" duration="1601000" />
       <workItem from="1749375534427" duration="291000" />
       <workItem from="1749473733044" duration="148000" />
+      <workItem from="1749809196451" duration="7159000" />
     </task>
     <servers />
   </component>
